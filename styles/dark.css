@@ -1,4 +1,4 @@
-html.theme-dark{
+html.theme-dark {
   --shadow-color: #ff0070;
   --font-h1-color: #db00ff;
   --background-main-image: url(/images/cover-image-dark.png);
@@ -9,16 +9,15 @@ html.theme-dark{
   --paragraf-color: #f1b2ce;
 }
 
-@media (prefers-color-scheme: dark){
-
-  :root{
-      --shadow-color: #ff0070;
-      --font-h1-color: #db00ff;
-      --background-main-image: url(/images/cover-image-dark.png);
-      --spec-bckgr-color-p: #ff0070;
-      --p-color: #ff0070;
-      --title-out-bckgr-color: #ff0070;
-      --spec-font-color: #000028;
-      --paragraf-color: #f1b2ce;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadow-color: #ff0070;
+    --font-h1-color: #db00ff;
+    --background-main-image: url(/images/cover-image-dark.png);
+    --spec-bckgr-color-p: #ff0070;
+    --p-color: #ff0070;
+    --title-out-bckgr-color: #ff0070;
+    --spec-font-color: #000028;
+    --paragraf-color: #f1b2ce;
   }
 }

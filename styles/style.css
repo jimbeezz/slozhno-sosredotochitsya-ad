@@ -156,7 +156,7 @@ h4.title-type-bgr {
   align-items: center;
   justify-content: center;
   width: 100%;
-  block-size: calc(100vh - 2*var(--page-padding));
+  block-size: calc(100vh - 2 * var(--page-padding));
 }
 
 .footer h1::after {
@@ -203,16 +203,16 @@ h4.title-type-bgr {
   grid-column: 1;
 }
 
-.☻{
+.☻ {
   margin-bottom: 20px;
 }
 
-.gallery{
+.gallery {
   display: grid;
-  gap: var(--page-padding)
+  gap: var(--page-padding);
 }
 
-.link{
+.link {
   text-decoration: none;
   text-shadow: 1px 1px 0 var(--shadow-color);
 }
@@ -230,92 +230,100 @@ h4.title-type-bgr {
 }
 
 @media (width >= 768px) {
-
-  :root{
-    --page-padding:20px;
+  :root {
+    --page-padding: 20px;
   }
 
-  .header-text{
+  .header-text {
     inline-size: 50%;
     justify-self: right;
   }
-  
-  .main .main_section:nth-of-type(1){
+
+  .main .main_section:nth-of-type(1) {
     display: grid;
     gap: var(--page-padding);
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
 
-  .main_first_grid{
+  .main_first_grid {
     grid-column: 2;
     grid-row: 1;
   }
 
-  .strange-shit{
+  .strange-shit {
     width: 20%;
   }
 
-  .main .main_section:nth-of-type(3){
+  .main .main_section:nth-of-type(3) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     gap: var(--page-padding);
   }
 
-  .gallery{
+  .gallery {
     display: grid;
     gap: var(--page-padding);
-    grid-template-areas: 
-      "sunset sunset icecream"
-      "tape books icecream"
-      "tape street street";
+    grid-template-areas:
+      'sunset sunset icecream'
+      'tape books icecream'
+      'tape street street';
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 192fr 230fr 318fr;
     min-height: 780px;
     width: 100%;
   }
-  
+
   .gallery li {
-  display: contents;
+    display: contents;
   }
 
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  grid-area: inherit; 
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: inherit;
   }
 
-  .sunset{ grid-area: sunset;}
+  .sunset {
+    grid-area: sunset;
+  }
 
-  .tape{grid-area: tape;}
+  .tape {
+    grid-area: tape;
+  }
 
-  .icecream{grid-area: icecream;}
+  .icecream {
+    grid-area: icecream;
+  }
 
-  .books{grid-area: books;}
+  .books {
+    grid-area: books;
+  }
 
-  .street{grid-area: street;}
+  .street {
+    grid-area: street;
+  }
 }
 
-@media (width>=1024px){
-
-  .header__theme-menu{
+@media (width>=1024px) {
+  .header__theme-menu {
     align-self: start;
     justify-self: center;
   }
 
-  .header__theme-menu-list{
+  .header__theme-menu-list {
     display: flex;
   }
 
-  .real-main_section{
+  .real-main_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--page-padding)
+    gap: var(--page-padding);
   }
-  
-  .strange-shit{
+
+  .strange-shit {
     width: 30%;
   }
 }
