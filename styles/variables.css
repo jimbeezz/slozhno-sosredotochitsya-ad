@@ -3,16 +3,18 @@
   и их переопределение под различные устройства
 */
 
-:root{
-  --shadow-color:#FF0070;
-  --font-h1-color: #DB00FF;
+:root {
+  --shadow-color: #ff0070;
+  --font-h1-color: #db00ff;
   --background-main-image: url(/images/cover-image-dark.png);
-  --font-h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --spec-bckgr-color-p: #ff0070;
+  --p-color: #ff0070;
+  --title-out-bckgr-color: #ff0070;
+  --spec-font-color: #000028;
+  --paragraf-color: #f1b2ce;
+  --margin-main: 40px;
+  --gap-main: 50px;
+  --page-padding: 10px;
   --inline-size-special-bcgr: 117px;
   --block-size-special-bcgr: min-content;
-  --spec-bckgr-color-p:  #FF0070;
-  --p-color: #FF0070;
-  --title-out-bckgr-color: #FF0070;
-  --spec-font-color:#000028;
-  --paragraf-color: #F1B2CE;
 }
