@@ -10,15 +10,20 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6{
+  font-family: inherit;
+  font-size: 18px;
+  margin: 0;
+}
+
+p{
   margin: 0;
 }
 
@@ -39,4 +44,24 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+.visually-hidden {
+
+position: absolute; /* элемент вырывают из потока */
+
+width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+
+height: 1px;
+
+margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+
+padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+
+border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+
+clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+
+overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+
 }

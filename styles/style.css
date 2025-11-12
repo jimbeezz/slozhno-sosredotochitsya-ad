@@ -1,5 +1,139 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
+
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--background-main-image);
+  /* background-size: cover; */
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header{
+  display: grid;
+  /*background-image: var(--background-header-image);
+  background-size: cover;
+  background-position: center;*/
+  width: 100%;
+  block-size: 100vh;
+  grid-template-rows: 1fr auto 1fr;
+}
+
+h1{
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  letter-spacing: 0%;
+  align-self: center;
+  justify-self: start;
+  text-shadow: 4px 4px 0 var(--shadow-color);
+  color: var(--font-h1-color);
+}
+
+.header__theme-menu{
+  align-self: center;
+  justify-self: right;
+}
+
+.header__theme-menu-button{
+  background-color: transparent;
+  color: var(--p-color);
+  border: initial;
+  block-size: 26px;
+  inline-size: 70px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--p-color); 
+  pointer-events: none; 
+}
+
+.title-type-bgr{
+  text-align: start;
+  align-self: center;
+  min-height: min-content;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  block-size: var(--block-size-special-bcgr);
+  background-color: var(--spec-bckgr-color-p) ;
+  margin-inline: 10px;
+  color: var(--spec-font-color);
+}
+
+p .title-type-bgr{
+  justify-self: right;
+  inline-size: var(--inline-size-special-bcgr);
+}
+
+.rec-label{
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  color: var(--p-color);
+  font-weight: 400;
+}
+
+.rec-label::after{
+  content: '';
+  display: inline-block;
+  background-color: var(--p-color);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-left: 10px; 
+  box-shadow: 0 0 0 2px #ff007078;
+}
+
+.decorated-zone::after{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  left: 10px;
+  bottom: 10px;
+  border-bottom: 1px solid var(--p-color);
+  border-left: 1px solid var(--p-color);
+}
+
+.decorated-zone::before{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+  border-top: 1px solid var(--p-color);
+  border-right: 1px solid var(--p-color);
+}
+
+.main-section{
+  display: grid;
+}
+
+.gallery-image{
+  width: 100%;
+}
+
+.title-type{
+font-weight: 700;
+line-height: 23.4px;
+letter-spacing: 0%;
+color: var(--p-color);
+}
+
+h4 .title-type-bgr{
+  color: #000028;
+}
+
+.default-text{
+  color: var(--paragraf-color);
+  font-weight: 400;
 }
