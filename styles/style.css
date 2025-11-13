@@ -230,6 +230,7 @@ h4.title-type-bgr {
 }
 
 @media (width >= 768px) {
+
   :root {
     --page-padding: 20px;
   }
@@ -237,6 +238,7 @@ h4.title-type-bgr {
   .header-text {
     inline-size: 50%;
     justify-self: right;
+    margin: 66px;
   }
 
   .main .main_section:nth-of-type(1) {
@@ -308,6 +310,7 @@ h4.title-type-bgr {
 }
 
 @media (width>=1024px) {
+  
   .header__theme-menu {
     align-self: start;
     justify-self: center;

@@ -10,6 +10,7 @@ html.theme-dark {
 }
 
 @media (prefers-color-scheme: dark) {
+  
   :root {
     --shadow-color: #ff0070;
     --font-h1-color: #db00ff;
