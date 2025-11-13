@@ -1,20 +1,22 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  --shadow-color: #ff0070;
-  --font-h1-color: #db00ff;
-  --background-main-image: url(/images/cover-image-dark.png);
-  --spec-bckgr-color-p: #ff0070;
-  --p-color: #ff0070;
-  --title-out-bckgr-color: #ff0070;
-  --spec-font-color: #000028;
-  --paragraf-color: #f1b2ce;
-  --margin-main: 40px;
-  --gap-main: 50px;
-  --page-padding: 10px;
-  --inline-size-special-bcgr: 117px;
-  --block-size-special-bcgr: min-content;
+  --back-color: #fff1f7;
+  --heder-title-color: #ffc2e6;
+  --bgr-text-color: #ff8dcb;
+  --text-on-bgr-color: #353430;
+  --title-text-color: #353430;
+  --main-text-color: #353430;
+  --decor-elem-color: #353430;
+  --title-shad-color: #ff8dcb;
+  --footer-shad-color: #ff8dcb;
+  --link-shad-color: #ff8dcb;
+  --back-img: url("../images/cover-image-light.png");
+  --main-font: 'IBM Plex Mono', monospace;
+  --fat-text: 700;
+  --text-size: 18px;
+  --text-height: 23.4px;
+  --big-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --page-marg: 10px;
+  --between-cards: 10px;
+  --main-marg: 40px;
+  --main-gap: 50px;
 }
