@@ -15,6 +15,7 @@
   width: 100%;
   block-size: 100vh;
   grid-template-rows: 1fr 1fr 1fr;
+  padding-right: var(--page-padding);
 }
 
 .main {
@@ -73,6 +74,10 @@ h1 {
   background-color: var(--spec-bckgr-color-p);
   color: var(--spec-font-color);
   margin-bottom: 10px;
+}
+
+.header .title-type-bgr {
+  margin-left: var(--page-padding);
 }
 
 .rec-label {
@@ -150,6 +155,7 @@ h4.title-type-bgr {
   font-style: regular;
   font-size: 18px;
   font-weight: 400;
+  line-height: 23.4px;
 }
 
 .footer {
@@ -237,6 +243,7 @@ h4.title-type-bgr {
   :root {
     --page-padding: 20px;
     --gap-main: 80px;
+    --margin-main: 60px;
   }
 
   .header-text {
@@ -311,7 +318,7 @@ h4.title-type-bgr {
     grid-area: street;
   }
 
-  .rec-label{
+  .rec-label {
     right: 29px;
   }
 }
@@ -341,7 +348,7 @@ h4.title-type-bgr {
     width: 30%;
   }
 
-  h1{
+  h1 {
     font-size: 157px;
   }
 }
